@@ -1,0 +1,181 @@
+  :root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #8F57FD;
+    --secundario: #AB88FF;
+    --azul: #5E1DFC;
+    --verde:#21C08B;
+    --amarillo:#E6AF2E;
+
+    --fuente-principal: 'Muli', sans-serif;
+}
+  body {
+    margin: 0px;
+    font-size: 16px;
+    font-family: var(--fuente-principal);
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .header {
+    background-color: var(--verde);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .login, .container__404 {
+      background: linear-gradient(var(--verde), var(--secundario));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 3rem;
+      min-height: calc(100vh - 20rem);
+  }
+  .container__404 {
+    color: var(--blanco);
+    min-height: calc(100vh - 18rem);
+  }
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .container__404--title {
+    font-size: 7rem;
+    animation-name: pulse;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    margin: 0;
+  }
+  .login__container, .login__container-register {   
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 0.2rem solid var(--blanco);
+      border-radius: 4rem;
+      color: var(--blanco);
+      padding: 6rem 6.8rem 4rem;
+      min-height: 70rem;
+      width: 30rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      box-shadow: 0px 7px 18px 5px rgba(0,0,0,0.2);
+  }
+  .login__container-register {
+    min-height: 55rem; 
+  }
+  .login__container--form {
+      display: flex;
+      flex-direction: column;
+  }
+  .login__container--form label {
+      font-size: 1.4rem;
+  }
+  .login__container--remember-me {
+      color: var(--blanco);
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+  }
+  .login__container--remember-me a {
+      color: var(--blanco);
+      font-size: 1.4rem;
+      text-decoration: none;
+  }
+  .login__container--remember-me a:hover {
+    color: var(--blanco);
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.login__container--social-media > div > img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+.login__container--register {
+    font-size: 1.4rem;
+}
+.login__container--register a, .login__container--inicio-sesion {
+    font-size: 1.4rem;
+    color: var(--blanco);
+    font-weight: bold;
+    text-decoration: none;
+}
+.login__container--inicio-sesion {
+    text-align: center;
+}
+.login__container--register a:hover , .login__container--inicio-sesion:hover{
+    text-decoration: underline;
+}
+.input {
+    background-color: transparent;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0.2rem solid var(--blanco);
+    font-family: var(--fuente-principal);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    outline: none;
+    height: 5rem;
+}
+::placeholder {
+    color: var(--blanco);
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 2.5rem;
+    color: var(--blanco);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: var(--fuente-principal);
+    height: 5rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--secundario);
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-left: 3rem;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px ) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
