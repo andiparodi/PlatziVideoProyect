@@ -100,10 +100,8 @@
       font-size: 1.6rem;
       position: absolute;
       padding-left: 3rem;
-      width: 100%;
   }
   .carousel {
-    width: 100%;
     overflow: scroll;
     padding-left: 3rem;
     position: relative;
@@ -199,4 +197,4 @@
         align-items: flex-start;
         flex-direction: column;
     }
-}
+  }
