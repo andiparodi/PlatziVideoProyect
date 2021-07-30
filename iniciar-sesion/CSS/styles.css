@@ -13,6 +13,7 @@ body {
   margin: 0px;
   font-size: 16px;
   font-family: var(--fuente-principal);
+  overflow-x: hidden;
 }
 
 html {
@@ -274,7 +275,7 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
-  .login__container {
+  .login__container, .login__container-register {
     background-color: transparent;
     border: none;
     padding: 0;
